@@ -17,8 +17,10 @@ export default function Field(props) {
 
 Field.propTypes = {
   title: PropTypes.string,
+  value: PropTypes.string,
 }
 
 Field.defaultProps = {
-  title: 'Titill á verkefni'
+  title: 'Titill á verkefni',
+  value: ''
 }

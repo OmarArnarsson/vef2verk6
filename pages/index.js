@@ -18,7 +18,7 @@ function Home(props) {
     setLoading(true);
     const todos = await getTodos(hideCompleted);
     setItems(todos);
-    setHideCompleted(!hideCompleted);
+    setHideCompleted(hideCompleted);
     setLoading(false);
  }
 
