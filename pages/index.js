@@ -18,7 +18,7 @@ function Home(props) {
     setLoading(true);
     const todos = await getTodos(hideCompleted);
     setItems(todos);
-    setHideCompleted(hideCompleted);
+    setHideCompleted(!hideCompleted);
     setLoading(false);
  }
 
@@ -27,7 +27,7 @@ function Home(props) {
       <Todos 
         initTodos = {initTodos} 
         loading = {loading}
-        onToggle = {loading}>
+        onToggle = {onToggle}>
       </Todos>
     </Layout>
   );
