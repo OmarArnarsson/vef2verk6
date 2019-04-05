@@ -11,7 +11,7 @@ module.exports = withCSS({
   },
 
 publicRuntimeConfig: {
-    apiUrl: process.env.apiUrl
+    apiUrl: 'http://localhost:5000'
   }
 
 });
