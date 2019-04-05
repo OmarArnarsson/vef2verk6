@@ -68,7 +68,7 @@ export async function getTodos(hideCompleted = undefined) {
   /* todo */
   const completed = hideCompleted ? false : true;
 
-  const url = new URL('/?completed=${completed}', apiUrl);
+  const url = new URL('/', apiUrl);
   const response = await fetch(url.href);
   const result = await response.json();
 
